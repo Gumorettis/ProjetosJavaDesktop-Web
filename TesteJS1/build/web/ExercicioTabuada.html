@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-BR">
+    <head>
+        <title>Exercicio Tabuada</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="estilosCSS/estilo2.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+
+        <header>
+            <h1> Exercicio Tabuada ! Digite um numero abaixo</h1>
+        </header>
+
+        <section>
+
+            <div>
+                Digite um Numero: <input type="number" name="num" id="txtnum"/> 
+
+                <input type="button" value="Gerar Tabuada" onclick="calcularTabuada()"/>
+
+            </div>
+
+            <div id="result">
+
+                <select name="resTabuada" size="15"></select> 
+                
+            </div>
+            <br>
+            <img class="imagemFim" src="imagens/tabuada.jpg"/> 
+        </section>
+
+        <footer>
+
+            <p> Layout basico para exercicio </p>
+        </footer>
+
+        <script src="scripts/exTabuada.js"></script>
+    </body>
+</html>

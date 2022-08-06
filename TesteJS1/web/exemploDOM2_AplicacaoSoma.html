@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-BR">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+
+            body{
+                background-color: bisque;
+                font: normal 25pt Arial;
+                color: black;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <div>Teste de Animações JS com DOM ! </div>
+
+        <h1> Soma de valores : </h1>
+
+        N1: <input type="number" name="num1" id="num1"/> <br>
+
+        N2: <input type="number" name="num2" id="num2"/> <br>
+
+        <input type="button" value="SOMAR" onclick="somar()">
+        
+        <p>Resultado: </p>
+        
+        <div id="result">
+            
+        </div>
+        
+        <script>
+
+            function somar() {
+                var textn1 = window.document.getElementById('num1');
+                var textn2 = window.document.getElementById('num2');
+                var resultado = window.document.getElementById('result');
+                
+                var n1 = Number(textn1.value);
+                var n2 = Number(textn2.value);
+                
+                var soma = n1+n2;
+                resultado.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${soma}`;
+            }
+            
+        </script>
+    </body>
+</html>

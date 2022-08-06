@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25/01/2021, 12:16:43
+    Author     : gusta
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5F7C8A;
+}
+
+form{
+    background-color: whitesmoke;
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+form h2{
+    text-align: center;
+    color: #5F7C8A;    
+    font-family: sans-serif;
+    font-size: 25pt;
+}
+
+form input[type=text],form input[type=password]{
+    
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 12px;
+    margin: 10px 0;
+}
+
+form input[type=submit]{
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background-color: #5F7C8A;
+    color: whitesmoke;
+    font-family: Arial;
+    border: 0;
+    border-radius: 25px;
+}
+
+form input[type=submit]:hover{
+    background-color: #4A5F6A;
+    
+}

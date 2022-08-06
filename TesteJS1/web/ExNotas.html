@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/css">
+
+            body{
+                font: normal 20pt Verdana; 
+            }
+
+            h1{
+                color: blue;
+                size: 15pt; 
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>Dados finais: </div>
+
+        <h1>
+
+            <script>
+
+                var nome = window.prompt('Entre com seu nome: ');
+
+                var nota1 = Number.parseFloat(window.prompt('Digite a 1º nota: '));
+                var nota2 = Number.parseFloat(window.prompt('Digite a 2º nota: '));
+                var nota3 = Number.parseFloat(window.prompt('Digite a 3º nota: '));
+                var nota4 = Number.parseFloat(window.prompt('Digite a 4º nota: '));
+
+                var media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+                if (media >= 6) {
+                    document.writeln(`Seu nome é: ${nome}, sua média final é: ${media}, e sua situação é APROVADO !`);
+                } else {
+                    document.writeln(`Seu nome é: ${nome}, sua média final é: ${media}, e sua situação é REPROVADO !`)
+                }
+            </script>
+
+        </h1>
+    </body>
+</html>

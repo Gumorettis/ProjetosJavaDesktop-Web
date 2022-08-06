@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-BR">
+    <head>
+        <title>Programa Para verificar Idade</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="estilosCSS/estilo.css"/>
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Verificador de Idade ! </h1>
+        </header>
+
+        <section>
+
+            <div >
+                Ano de Nascimento: <input type="number" name="ano" id="ano"/> <br>
+
+                <p>Sexo: 
+                    <input type="radio" name="radio" id="masc" checked="">
+                    <label for="masc">Masculino </label>
+
+                    <input type="radio" name="radio" id="fem">
+                    <label for="fem">Feminino </label>
+                </p>
+
+                <p>
+                    <input type="button" value="Verificar Idade!" onclick="verificar()"/>
+                </p>
+                
+            </div>
+
+            <div id="result">
+                
+                <p id="resultado"> Preencha os dados acima para calcular !</p> 
+                <img src="imagens/imagem.png" alt="" id="foto"/>
+                
+            </div>
+
+        </section>
+
+        <footer>
+
+            <p>Programa teste para calcular idade usando JS ! </p>
+        </footer>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

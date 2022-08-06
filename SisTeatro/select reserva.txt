@@ -1,0 +1,67 @@
+select reserva.*, cliente.nome
+from reserva, cliente
+where reserva.idCliente = cliente.id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	int opc=0, op=0;
+        String nome,stelefone,sopc,sop;
+        int telefone;
+        String endereco;
+        
+        File arquivo = new File("teste.txt");
+        
+        try {      
+           
+            
+            FileWriter fileWriter =  new FileWriter(arquivo); //escrever no arquivo
+            BufferedWriter escrever = new BufferedWriter(fileWriter); // escrever no arquivo
+            
+            sopc = JOptionPane.showInputDialog(null,"Escolha uma opção: 1-Cadastrar 2- Listar 3- Alterar 4- Excluir 5- Sair.");
+            opc = Integer.parseInt(sopc);
+            
+            if(opc==1){
+                sop = JOptionPane.showInputDialog(null,"Escolha uma opção de cadastro: 1-Cliente 2- Pedido.");
+                op = Integer.parseInt(sop);
+                
+                if(op==1){
+                     
+                    File fil  = new File("C:\\Users\\Gustavo\\Desktop\\cad java\\TrabalhoTeste\\test.txt");
+                    
+                     nome = JOptionPane.showInputDialog(null,"Digite o nome do cliente: ");
+                     stelefone = JOptionPane.showInputDialog(null,"Digite o telefone do cliente: ");
+                     telefone = Integer.parseInt(stelefone);
+         
+            fileWriter.write(nome+telefone);  
+            fileWriter.close();
+            
+                }
+            }
+            
+            FileReader ler = new FileReader(arquivo);
+            BufferedReader lerb = new BufferedReader(ler); // para ler o que está no arquivo
+            String linha = lerb.readLine(); // lÊ as priemiras linhas do txt uma por uma
+                    
+            //lista conteudo do txt
+            while (linha!=null) { // while para começar a ler a linha 
+                System.out.println(linha);
+                linha = lerb.readLine();
+            }
+            
+            fileWriter.close();
+ 
+        } catch (IOException e) {
+    }

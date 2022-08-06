@@ -1,0 +1,137 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/01/2021, 15:20:01
+    Author     : gusta
+*/
+
+
+p{
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+}
+
+/*estrutura do slider */
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23E3C9;
+}
+
+/*tamanho da tela que irá passar*/
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* tamanho das fotos passando*/
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+/*navegação manual */
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #40D3DC;
+    transition: 1s;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0;
+    
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -20%;
+    
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -40%;
+    
+}
+#radio4:checked ~ .primeiro{
+    margin-left: -60%;
+    
+}
+
+/* css para passagem automatica */
+.navigation-automatica{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px
+}
+
+.navigation-automatica div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-automatica div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~.navigation-automatica .auto-btn1{
+    background: #40D3DC;
+    
+}
+#radio2:checked ~.navigation-automatica .auto-btn2{
+    background: #40D3DC;
+    
+}
+#radio3:checked ~.navigation-automatica .auto-btn3{
+    background: #40D3DC;
+    
+}
+#radio4:checked ~.navigation-automatica .auto-btn4{
+    background: #40D3DC;
+}

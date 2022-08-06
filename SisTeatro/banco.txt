@@ -1,0 +1,17 @@
+create table reserva( 
+id_reserva serial primary key, 
+data_reserva date,
+desc_evento_reserva varchar(100),
+nome_cli varchar(100)
+)
+
+
+id_cli serial NOT NULL,
+  
+nome_cli character varying(100) NOT NULL,
+  
+telefone_cli integer,
+  
+idade_cli integer,
+  
+endereco_cli character varying(100),

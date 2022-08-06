@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/01/2021, 14:46:03
+    Author     : gusta
+*/
+body{
+    background: #0099ff; 
+    font: normal 15pt Arial; 
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: whitesmoke;
+    border-radius: 20px;
+    padding: 15px;
+    width: 500px;
+    margin: auto; /*deixa a margem no centro*/
+    box-shadow: 3px 3px 10px bisque; /*aplica uma sombra na section*/
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+.resultado{
+    text-align: center;
+}
+div#result{
+    text-align: center;
+}
